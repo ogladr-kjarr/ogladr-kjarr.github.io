@@ -16,7 +16,7 @@
 title: óglaðr kjarr
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog that focuses on computing science, data science, and programming.
+  A blog that focuses on {computing, data} science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ogladr-kjarr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -28,7 +28,7 @@ plugins:
 
 # Added Parameters
 
-logo: assets/img/logo.jpg
+logo: assets/img/logo.png
 author: óglaðr kjarr
 
 # Exclude from processing.
