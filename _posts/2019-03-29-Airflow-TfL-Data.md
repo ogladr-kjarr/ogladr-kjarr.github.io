@@ -424,4 +424,4 @@ with DAG('london_parking_bay_harvest_hooks',
 opr_download_data.set_downstream(api_json_to_db)
 ~~~
 
-I included in the Github repo a RMakrdown file that connects to the database and creates a few plots, just to show how the data could be used.  In the future I want to try to automate the reports creation via a bash command in the DAG.
+I included in the Github repo a RMarkdown file that connects to the database and creates a few plots, just to show how the data could be used.  In the future I want to try to automate the reports creation via a bash command in the DAG.
