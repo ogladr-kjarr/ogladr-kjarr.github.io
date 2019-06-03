@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API Harvesting with Apache Airflow
-date: 01/04/2019
+date: 29/03/2019
 categories: data-engineering
 tags: data-engineering
 ---
@@ -53,15 +53,15 @@ def download_api_data(**kwargs):
             f.write(r.text)
     else:
         raise AirflowException()
- 
+
 def api_json_to_csv(**kwargs):
 
-    json_files = [f for f in listdir(kwargs['base_dir']) 
-                    if isfile(join(kwargs['base_dir'], f)) 
+    json_files = [f for f in listdir(kwargs['base_dir'])
+                    if isfile(join(kwargs['base_dir'], f))
                     if '.json' in f]
 
-    csv_file = [f for f in listdir(kwargs['base_dir']) 
-                    if isfile(join(kwargs['base_dir'], f)) 
+    csv_file = [f for f in listdir(kwargs['base_dir'])
+                    if isfile(join(kwargs['base_dir'], f))
                     if 'parking_data.csv' in f]
 
     df_columns = [
@@ -110,7 +110,7 @@ def api_json_to_csv(**kwargs):
 
     if len(csv_file) > 0:
         with open(filename, 'a') as f:
-            parking_df.to_csv(f, 
+            parking_df.to_csv(f,
                               header=False,
                               index=False)
     else:
@@ -118,8 +118,8 @@ def api_json_to_csv(**kwargs):
                           index=False)
 
     for current_file in json_files:
-        remove(join(kwargs['base_dir'],current_file)) 
- 
+        remove(join(kwargs['base_dir'],current_file))
+
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -128,7 +128,7 @@ default_args = {
     'retries': 0,
     'provide_context': True
 }
- 
+
 with DAG('london_parking_bay_harvest_operators',
          catchup=False,
          default_args=default_args,
@@ -141,7 +141,7 @@ with DAG('london_parking_bay_harvest_operators',
         op_kwargs={'base_dir': base_dir},
         python_callable=download_api_data
     )
- 
+
     api_json_to_csv = PythonOperator(
         task_id='api_json_to_csv',
         op_kwargs={'base_dir': base_dir},
@@ -193,12 +193,12 @@ This second part loads the JSON files, appends each entry in a JSON file to a Pa
 ~~~ python
 def api_json_to_csv(**kwargs):
 
-    json_files = [f for f in listdir(kwargs['base_dir']) 
-                    if isfile(join(kwargs['base_dir'], f)) 
+    json_files = [f for f in listdir(kwargs['base_dir'])
+                    if isfile(join(kwargs['base_dir'], f))
                     if '.json' in f]
 
-    csv_file = [f for f in listdir(kwargs['base_dir']) 
-                    if isfile(join(kwargs['base_dir'], f)) 
+    csv_file = [f for f in listdir(kwargs['base_dir'])
+                    if isfile(join(kwargs['base_dir'], f))
                     if 'parking_data.csv' in f]
 
     df_columns = [
@@ -247,7 +247,7 @@ def api_json_to_csv(**kwargs):
 
     if len(csv_file) > 0:
         with open(filename, 'a') as f:
-            parking_df.to_csv(f, 
+            parking_df.to_csv(f,
                               header=False,
                               index=False)
     else:
@@ -255,7 +255,7 @@ def api_json_to_csv(**kwargs):
                           index=False)
 
     for current_file in json_files:
-        remove(join(kwargs['base_dir'],current_file)) 
+        remove(join(kwargs['base_dir'],current_file))
 ~~~
 
 In this last section the DAG itself is created, scheduled to run every fifteen minutes, with some filler default arguments.  The two python operators are created, with task names to identify in the GUI, the base_dir parameter value, and a reference to the function that is the callable operator.  Lastly the set_downstream function is used to create the link between operators.
@@ -269,7 +269,7 @@ default_args = {
     'retries': 0,
     'provide_context': True
 }
- 
+
 with DAG('london_parking_bay_harvest_operators',
          catchup=False,
          default_args=default_args,
@@ -282,7 +282,7 @@ with DAG('london_parking_bay_harvest_operators',
         op_kwargs={'base_dir': base_dir},
         python_callable=download_api_data
     )
- 
+
     api_json_to_csv = PythonOperator(
         task_id='api_json_to_csv',
         op_kwargs={'base_dir': base_dir},
@@ -352,8 +352,8 @@ The second Python operator is similar to the first attempt version in the way th
 def api_json_to_db(**kwargs):
     base_dir = Variable.get("tfl_park_base_dir")
 
-    json_files = [f for f in listdir(base_dir) 
-                    if isfile(join(base_dir, f)) 
+    json_files = [f for f in listdir(base_dir)
+                    if isfile(join(base_dir, f))
                     if '.json' in f]
 
     db_tuples = []
@@ -378,10 +378,10 @@ def api_json_to_db(**kwargs):
                     park_bay_free = bay['free']
                     park_bay_count = bay['bayCount']
 
-                    db_tuples.append((timestamp, 
-                                        park_id, 
-                                        park_name, 
-                                        park_bay_type, 
+                    db_tuples.append((timestamp,
+                                        park_id,
+                                        park_name,
+                                        park_bay_type,
                                         park_bay_occupied,
                                         park_bay_free,
                                         park_bay_count))
@@ -415,7 +415,7 @@ with DAG('london_parking_bay_harvest_hooks',
         task_id='download_api_data',
         python_callable=download_api_data
     )
- 
+
     api_json_to_db = PythonOperator(
         task_id='api_json_to_db',
         python_callable=api_json_to_db
