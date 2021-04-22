@@ -16,7 +16,7 @@
 title: óglaðr kjarr
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog that focuses on {computing, data} science.
+  A personal blog that focuses on {computing, data} science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ogladr-kjarr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
