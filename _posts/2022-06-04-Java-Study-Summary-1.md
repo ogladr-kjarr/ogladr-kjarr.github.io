@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Study Summary - 001
+title: Study Summary - 1
 date: 04/06/2022
 categories: Programming
 tags: Java
