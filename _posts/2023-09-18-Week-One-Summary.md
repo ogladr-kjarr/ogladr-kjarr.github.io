@@ -12,7 +12,7 @@ At the end of the first week I have completed a *Free Code Camp* video and a Kev
 
 **Learn HTML - Full Tutorial for Beginners (2022) - FreeCodeCamp.org Dave Gray [YouTube](https://www.youtube.com/watch?v=kUMe1FH4CHE)**
 
-This was a tutorial covering how to create web pages with only HTML. Of most interest were the parts on semantic HTML and the information on how to make web pages more accessible for those who cannot visually interact with a web page. The advice to not use <div></div> tags was surprising. He mentions that people used to use them a lot but now they're not used as much as they were, as they provide no semantic meaning. Overall it was a good introduction to HTML and common HTML tags, both block and inline, their attributes, and how to design a page using semantic tags to improve the accessibility. It has a good tutorial project at the end to recap what was covered.
+This was a tutorial covering how to create web pages with only HTML. Of most interest were the parts on semantic HTML and the information on how to make web pages more accessible for those who cannot visually interact with a web page. The advice to not use div elements was surprising. He mentions that people used to use them a lot but now they're not used as much as they were, as they provide no semantic meaning. Overall it was a good introduction to HTML and common HTML tags, both block and inline, their attributes, and how to design a page using semantic tags to improve the accessibility. It has a good tutorial project at the end to recap what was covered.
 
 **HTML & CSS for beginners (playlist) - Kevin Powell [YouTube](https://www.youtube.com/watch?v=LGQuIIv2RVA&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-)**
 
