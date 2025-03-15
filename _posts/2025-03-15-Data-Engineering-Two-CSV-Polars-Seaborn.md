@@ -9,7 +9,7 @@ tags: Data Engineering
 
 This project was created to practise working with CSV files and data visualization libraries. [Code](https://github.com/ogladr-kjarr/data-engineering-two) is on Githubl
 
-The data was taken from the CEH [ECN data site](https://catalogue.ceh.ac.uk/datastore/eidchub/fc9bcd1c-e3fc-4c5a-b569-2fe62d40f2f5/), specifically the [meterological section](https://catalogue.ceh.ac.uk/datastore/eidchub/fc9bcd1c-e3fc-4c5a-b569-2fe62d40f2f5/).
+The data was taken from the CEH [ECN data site](https://ecn.ac.uk/data/available-data), specifically the [meterological section](https://catalogue.ceh.ac.uk/datastore/eidchub/fc9bcd1c-e3fc-4c5a-b569-2fe62d40f2f5/).
 
 
 # Data Wrangling
