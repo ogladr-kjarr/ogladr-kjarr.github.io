@@ -19,4 +19,9 @@ The only area I found difficult to understand following their teaching was Parti
 
 There were two sub-sections that were in this textbook that were not in the Algebra and Trigonometry book, and a chapeter introducing calculus. I worked through these, happily knowing that I'd already covered all the rest of the material. I'm looking forward to when I start calculus.
 
+## PreCalculus: Stitz and Zeager
+
+This is my favourite math textbook so far. It's not as simple as the OpenStax PreCalculus text, which has a lot more hand holding. I also preferred the style of the book more, I feel concept explanation was better, and the number of exercises was as good as OpenStax. Also it felt more like a tutorial, with much more textual explanations of things, rather than just example/question repeats.
+
+
 # Computing
