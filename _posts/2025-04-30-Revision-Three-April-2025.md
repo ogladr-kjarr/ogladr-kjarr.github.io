@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revision Three - April 2025
+title: Revision Three - Maths
 date: 30/04/2025
 categories: Self-Study
 tags: Mathematics
@@ -24,8 +24,8 @@ There were two sub-sections that were in this textbook that were not in the Alge
 
 This was my favourite math textbook when I was early on in the text. It's not as simple as the OpenStax PreCalculus text, which has a lot more hand holding. I preferred the style of the book more, I felt concept explanation was better, and the number of exercises was as good as OpenStax. Also it felt more like a lecture, with much more textual explanations of things, rather than just example/question repeats.
 
-However, towards the end I realised that I prefered the OpenStax offering. As it's less wordy it is good as a reference text to look up when revision is needed, and I found I missed the simple short expanations followed by multiple examples.
+However, towards the end I realised that I preferred the OpenStax offering. As it's less wordy it is good as a reference text to look up when revision is needed, and I found I missed the simple short explanations followed by multiple examples.
 
-This book definitly went into more technical detail on absolute value inequalities, polynomial functions, and rational functions for example, as well as points on other subjects. The chapters related to trigonometry were excellent.
+This book definitely went into more technical detail on absolute value inequalities, polynomial functions, and rational functions for example, as well as points on other subjects. The chapters related to trigonometry were excellent.
 
 I ended up skipping most of the exercises as I had already worked at similar questions with the OpenStax books and was happy I understood the concepts.

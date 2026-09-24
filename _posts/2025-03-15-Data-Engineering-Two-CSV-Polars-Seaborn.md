@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Engineering Two - CSV, Polars, Seaborn
+title: EDA One - CEH Meteo Data
 date: 15/03/2025
-categories: Self-Study
-tags: Data Engineering
+categories: EDA
+tags: Data, EDA, Data Engineering
 ---
 # Introduction
 
@@ -116,7 +116,7 @@ def wrangle_to_wide_format(folder: str):
 
 The plots here are just the most basic to have a quick look at part of the data. I decided to use the dry temperature sensor to focus on, as it provides the most pleasing and intuitive data, that of a hourly temperature reading over a number of years. I decided to focus on one site, T09 - Alice Holt.
 
-First though, to see the above, I created a FacetGrid plot of all sites dry temperature values summarized to the monthly mean value, as shown below. I was happy getting the plot to show the site code in each facets title, but I was unhappy at the way the xticks aren't shown properly. Using the documention, Stack Overflow, ChatGPT, and Claude Sonnet, I could not find a working solution. I even tried using a pandas DataFrame in case there was some difference between their date time representation interpretation by the graph, but that didn't work either.
+First though, to see the above, I created a FacetGrid plot of all sites dry temperature values summarised to the monthly mean value, as shown below. I was happy getting the plot to show the site code in each facets title, but I was unhappy at the way the xticks aren't shown properly. Using the documentation, Stack Overflow, ChatGPT, and Claude Sonnet, I could not find a working solution. I even tried using a pandas DataFrame in case there was some difference between their date time representation interpretation by the graph, but that didn't work either.
 
 ![All Sites FacetGrid Plot](/assets/img/2025-03-15-Data-Engineering-Two-CSV-Polars-Seaborn/facet-grid-seaborn.png)
 

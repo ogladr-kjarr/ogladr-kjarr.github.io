@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Revision One - December 2024
+title: Revision One - Maths
 date: 28/12/2024
 categories: Self-Study
-tags: Mathematics, CS
+tags: Mathematics
 ---
 
 # Maths

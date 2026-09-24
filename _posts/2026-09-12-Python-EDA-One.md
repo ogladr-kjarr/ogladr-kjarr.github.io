@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Chicago Crime and Census Data
+title: EDA Two - Chicago Crime and Census Data
 date: 12/09/2026
 categories: EDA
-tags: Data, EDA
+tags: Data, EDA, Data Engineering
 ---
 
 # Introduction
@@ -22,7 +22,7 @@ The full [EDA session](https://github.com/ogladr-kjarr/learning-EDA-with-Python/
 
 The crime data starts in 2001 and ends in 2026, however full years of reports span 2003 to 2025. Some crimes do not have a community area to link to the census data, these were removed. Some crimes were renamed part way through the dataset, these were joined together.
 
-The below plot is simply a count of all the number of crimes per category committed over the full breadth of the timespan of the dataset. They y-axis is on a log scale so as to better show the full distribution of counts. Before using a log scale the higher counts such as theft and battery made much of the rest of the categories non visible.
+The below plot is simply a count of all the number of crimes per category committed over the full breadth of the time span of the dataset. They y-axis is on a log scale so as to better show the full distribution of counts. Before using a log scale the higher counts such as theft and battery made much of the rest of the categories non visible.
 
 ![Crime By Category Plot](/assets/img/2026-09-12-Chicago-Crime-EDA/02-CrimeByCategory.png)
 
@@ -36,7 +36,7 @@ These plots are static though, just giving an overall count of crimes. What's mo
 
 ![Crime By Year Plot](/assets/img/2026-09-12-Chicago-Crime-EDA/04-CrimeByYear.png)
 
-If we focus on the earliest year and latest year for which there is full data, we get the plot below. It shows much of what the previous plot showed, that there is a large reduction in many crimes, especialy theft. Shown is only a subset of all crimes though, specifically those categories that ended up with over 1000 reports each in 2025.
+If we focus on the earliest year and latest year for which there is full data, we get the plot below. It shows much of what the previous plot showed, that there is a large reduction in many crimes, especially theft. Shown is only a subset of all crimes though, specifically those categories that ended up with over 1000 reports each in 2025.
 
 ![Crime By Two Years Plot](/assets/img/2026-09-12-Chicago-Crime-EDA/05-CrimeBySelectedYears.png)
 
