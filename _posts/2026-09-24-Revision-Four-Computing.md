@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revision Four - EdX IBM Data Engineering
+title: Study Four - EdX IBM Data Engineering
 date: 24/09/2026
 categories: Self-Study
 tags: Data Engineering

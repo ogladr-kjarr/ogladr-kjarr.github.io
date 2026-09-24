@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revision Three - Maths
+title: Study Three - Maths
 date: 30/04/2025
 categories: Self-Study
 tags: Mathematics

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revision One - Maths
+title: Study One - Maths
 date: 28/12/2024
 categories: Self-Study
 tags: Mathematics

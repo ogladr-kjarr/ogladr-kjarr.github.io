@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revision Two - Computing
+title: Study Two - Computing
 date: 28/02/2025
 categories: Self-Study
 tags: Programming
